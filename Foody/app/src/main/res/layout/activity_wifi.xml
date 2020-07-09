@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textviewWifiFoodName"
+            android:layout_width="339dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Food title"
+            android:textColor="#FFFEFE"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewBackWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:drawableLeft="@drawable/back"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#CFCBCB"
+            android:textSize="19dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/edittextwifiname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="Tên wifi show sẵn nếu đã kết nối"
+        android:textSize="14dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/wifi"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edittextwifipass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edittextwifiname"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập mật khẩu"
+        android:textSize="14dp"
+
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnCapNhatWifi"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cập nhật Wifi"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/edittextwifipass"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+
+        />
+
+</RelativeLayout>

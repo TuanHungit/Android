@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/cardviewTinhThanh"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="289dp"
+        android:layout_height="52dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textviewtinhThanh"
+            android:layout_width="289dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:text="Tỉnh"
+            android:textColor="#161615"
+            android:textSize="18sp"
+            android:textStyle="" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

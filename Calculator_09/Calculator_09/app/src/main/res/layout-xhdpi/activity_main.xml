@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/text_layout"
+        >
+        <TextView
+            android:id="@+id/screen"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@android:color/darker_gray"
+            android:hint="0"
+            android:gravity="right"
+            android:textColorHint="@android:color/white"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="7"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="8"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="9"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:background="@drawable/opertion_border"
+                android:onClick="onClickSign"
+                android:text="/"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="4"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="5"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="6"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:background="@drawable/opertion_border"
+                android:onClick="onClickSign"
+                android:text="*"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="1"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="2"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="3"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:background="@drawable/opertion_border"
+                android:onClick="onClickSign"
+                android:text="-"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="0"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_border"
+                android:onClick="onClick"
+                android:text="."
+                android:textSize="40sp" />
+
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:background="@drawable/opertion_border"
+                android:onClick="onClickSign"
+                android:text="+"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/opertion_border"
+                android:onClick="onClickRefresh"
+                android:text="C"
+                android:textSize="40sp" />
+
+            <Button
+                android:layout_width="210dp"
+                android:layout_height="100dp"
+                android:background="@drawable/opertion_border"
+                android:onClick="onClickCalculate"
+                android:text="="
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="normal_width">470dp</dimen>
+    <dimen name="normal_height">320dp</dimen>
+
+</resources>
